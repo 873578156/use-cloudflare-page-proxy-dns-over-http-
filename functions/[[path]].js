@@ -5,7 +5,7 @@ export async function onRequest(context) {
 
   // 1. 定义你想要反向代理的目标 DoH 服务器基础地址
   // 例如，如果你想代理到 Cloudflare 的 DoH 服务，并保留路径
-  const UPSTREAM_DOH_BASE = 'https://dns.alidns.com';
+  const UPSTREAM_DOH_BASE = 'https://cloudflare-dns.com';
   // 或者，如果你想代理到 Google 的 DoH，但将所有请求都固定发送到 /dns-query 端点
   // const UPSTREAM_DOH_FIXED_ENDPOINT = 'https://dns.google/dns-query';
 
